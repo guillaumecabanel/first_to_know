@@ -2,7 +2,8 @@
   "name": "first_to_know",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "3.5"
+    "@rails/webpacker": "3.5",
+    "uikit": "^3.0.0-rc.17"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"
