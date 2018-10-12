@@ -1,0 +1,15 @@
+$card-padding: 16px;
+
+.card {
+  border: none;
+  margin-bottom: $card-padding;
+  padding: 16px;
+  box-shadow:  0 2px 4px rgba(hsl(0, 0%, 4%), 0.1), 0 0 0 1px rgba(hsl(0, 0%, 4%), 0.1) ;
+  &-footer{
+    margin: -$card-padding;
+    margin-top: $card-padding;
+    padding: $card-padding;
+    background-color: $white-bis;
+    border: none;
+  }
+};

@@ -1,0 +1,24 @@
+.container
+  .columns
+    .column.is-4-desktop.is-offset-4-desktop.is-6-tablet.is-offset-3-tablet
+      = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        .card
+          h2.title = t('sign_in')
+          = f.input :email, autofocus: true, placeholder: 'john.doe@gmail.com'
+          = f.input :password, placeholder: 'This is your secret'
+          - if devise_mapping.rememberable?
+            label.checkbox
+              input value="false" name="user[remember_me]" type="hidden"
+              input type="checkbox" name="user[remember_me]" id="user_remember_me" value="true"
+              span.checkbox-text<> Remember me
+
+          .card-footer.flexbox.flexbox-center
+              .flexitem-main
+              .flexitem
+                .field.is-grouped
+                  .control
+                    = link_to t('cancel'), root_path, class:"button is-text"
+                  .control
+                    = f.submit t('sign_in'), class: 'button is-link'
+
+      = render "devise/shared/links"

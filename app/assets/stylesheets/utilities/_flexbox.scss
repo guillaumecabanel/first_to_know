@@ -1,0 +1,41 @@
+.flexbox{
+  display: flex;
+
+  &-center{
+    align-items: center;
+    justify-content: center;
+  }
+  &-around{
+    align-items: center;
+    justify-content: space-around;
+  }
+  &-between{
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-end{
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &-align-top{
+    align-items: flex-start;
+  }
+  &-align-bottom{
+    align-items: flex-end;
+  }
+
+  &-wrap{
+    flex-wrap: wrap;
+  }
+
+  &-wrap-reverse{
+    flex-wrap: wrap-reverse;
+  }
+}
+
+.flexitem{
+  &-main{
+    flex: 1 0 auto;
+    padding: 0 8px;
+  }
+}
