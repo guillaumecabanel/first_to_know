@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "3.5",
-    "uikit": "^3.0.0-rc.17"
+    "bulma": "^0.7.1"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"
