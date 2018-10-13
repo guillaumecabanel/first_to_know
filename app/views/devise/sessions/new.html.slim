@@ -4,7 +4,7 @@
       = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
         .card
           h2.title = t('sign_in')
-          = f.input :email, autofocus: true, placeholder: 'john.doe@gmail.com'
+          = f.input :email, autofocus: true, placeholder: 'john.doe@example.com'
           = f.input :password, placeholder: 'This is your secret'
           - if devise_mapping.rememberable?
             label.checkbox
