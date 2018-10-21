@@ -12,3 +12,5 @@ fr:
       search: Chercher
     show:
       all_searches: Voir toutes les recherches
+    card:
+      delete: Supprimer

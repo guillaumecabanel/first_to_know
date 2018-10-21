@@ -6,6 +6,8 @@
         p
           i class=("fas fa-#{search.category.icon_name}") title=(search.category.title)
       p = t('offers', count: search.offers.count)
-    .flat-card-footer.flexbox.flexbox-center
+    .flat-card-footer
       .flexitem-main
       .flexitem
+        .flat-button-group
+          = link_to t('.delete'), search_path(search), method: :delete, class: 'flat-button flat-button-small'
