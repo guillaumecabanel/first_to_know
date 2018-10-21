@@ -5,6 +5,25 @@ body {
 p {
   color: $violet;
 }
+.flat-brand {
+  font-family: 'Lato', sans-serif;
+  color: $violet;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: .1rem;
+  line-height: 2;
+  padding-left: 8px;
+}
+
+.flat-brand-reverse{
+  font-family: 'Lato', sans-serif;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: .1rem;
+  line-height: 2;
+  padding-left: 8px;
+}
 
 .flat-title{
   font-family: 'Lato', sans-serif;
@@ -15,12 +34,14 @@ p {
   margin-bottom: 2rem;
 }
 
+
+
 h1.flat-title {
-  font-size: 1.9rem;
+  font-size: 2rem;
 }
 
 h2.flat-title {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 h3.flat-title {

@@ -1,6 +1,10 @@
 .flat-navbar
-  .flexbox.flexbox-between
+  .flexbox.flexbox-between.flexbox-wrap
     .flexitem-main
+      - unless params[:action] == 'home'
+        .flexbox.flexbox-align-top
+          = image_tag "logo-reverse"
+          .flat-brand-reverse = t('brand_html')
     .flexitem
       .flat-button-group
         - if current_user

@@ -1,5 +1,5 @@
 .container
-  .flexbox.flexbox-between.flexbox-align-top
+  .flexbox.flexbox-between.flexbox-align-top.flexbox-wrap
     h1.flat-title
       = t('searches', count: @searches.count)
     = link_to t('.new_search'), new_search_path, class: 'flat-button flat-button-primary'

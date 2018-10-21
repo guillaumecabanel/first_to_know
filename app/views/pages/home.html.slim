@@ -1,1 +1,19 @@
-h1.uk-heading-primary Hello world
+.container
+  .level
+    .flexbox.flexbox-align-top
+      = image_tag "logo"
+      .flat-brand = t('brand_html')
+
+  .columns
+    .column.is-4-desktop.is-offset-4-desktop.is-6-tablet.is-offset-3-tablet
+      .flat-card
+        .flat-card-body
+          .flexbox.flexbox-between.flexbox-align-top
+            h3.flat-title = t('.brand_message')
+
+          p = t('.app_description')
+        .flat-card-footer.flexbox.flexbox-center
+          .flexitem-main
+          .flexitem
+            .flat-button-group
+              = link_to t('sign_up'), new_user_registration_path, class: 'flat-button flat-button-primary'
