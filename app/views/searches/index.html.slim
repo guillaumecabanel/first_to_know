@@ -3,6 +3,18 @@
     h1.flat-title
       = t('searches', count: @searches.count)
     = link_to t('.new_search'), new_search_path, class: 'flat-button flat-button-primary'
+
+
+  .level
+    .flat-button-group
+      p.is-uppercase = t('.filter_by')
+      - if @category
+        = link_to t('.all_categories'), searches_path(category_id: ""), class: 'flat-button'
+      - @categories.each do |category|
+        = link_to searches_path(category_id: category.id), class: "flat-button #{'flat-button-active' if category == @category}" do
+          i class=("fas fa-#{category.icon_name}")
+          =< category.title
+
   .columns
     - @searches.each do |search|
       .column.is-4-desktop.is-6-tablet

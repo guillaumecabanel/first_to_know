@@ -1,6 +1,13 @@
 class SearchesController < ApplicationController
+  before_action :set_categories, only: [:index, :new, :create]
+
   def index
-    @searches = current_user.searches.order(created_at: :desc)
+    @category = Category.find(params[:category_id]) unless params[:category_id].nil? || params[:category_id].empty?
+    if @category
+      @searches = current_user.searches.where(category: @category).order(created_at: :desc)
+    else
+      @searches = current_user.searches.order(created_at: :desc)
+    end
   end
 
   def show
@@ -9,7 +16,6 @@ class SearchesController < ApplicationController
 
   def new
     @search     = Search.new
-    @categories = Category.all.order(:title)
   end
 
   def create
@@ -19,7 +25,6 @@ class SearchesController < ApplicationController
     if @search.save
       redirect_to searches_path
     else
-      @categories = Category.all.order(:title)
       render :new
     end
   end
@@ -28,5 +33,9 @@ class SearchesController < ApplicationController
 
   def search_params
     params.require(:search).permit(:query, :zip_code, :category_id)
+  end
+
+  def set_categories
+    @categories = Category.all.order(:title)
   end
 end

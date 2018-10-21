@@ -15,6 +15,8 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'slim'
+gem 'rest-client'
+gem 'money-rails', '~> 1.11'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

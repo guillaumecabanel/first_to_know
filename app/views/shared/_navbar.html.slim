@@ -2,7 +2,7 @@
   .flexbox.flexbox-between
     .flexitem-main
     .flexitem
-      .flat-form-button-group
+      .flat-button-group
         - if current_user
           = link_to t('sign_out'), destroy_user_session_path, method: :delete, class: 'flat-button flat-button-small'
         - else

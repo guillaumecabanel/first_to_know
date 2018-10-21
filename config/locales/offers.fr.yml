@@ -1,0 +1,7 @@
+fr:
+  offers:
+    zero: pas d'offre
+    one: 1 offre
+    other: '%{count} offres'
+    card:
+      show: Voir l'offre

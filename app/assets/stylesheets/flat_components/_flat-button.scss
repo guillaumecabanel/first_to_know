@@ -28,6 +28,11 @@
     padding-right: 7px;
   }
 
+  &.flat-button-active {
+    border-bottom: 4px solid $violet;
+    font-weight: bold;
+  }
+
   &.flat-button-primary {
     color: $white;
     background-color: $violet;
@@ -41,7 +46,7 @@
   }
 }
 
-.flat-form-button-group {
+.flat-button-group {
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -4,8 +4,8 @@
       .flexbox.flexbox-between.flexbox-align-top
         h3.flat-title = search.query
         p
-          i class=("fas fa-#{search.category.icon_name}")
-          =< search.category.title
+          i class=("fas fa-#{search.category.icon_name}") title=(search.category.title)
+      p = t('offers', count: search.offers.count)
     .flat-card-footer.flexbox.flexbox-center
       .flexitem-main
       .flexitem

@@ -1,0 +1,13 @@
+.flat-card
+  .flat-card-body
+    .flexbox.flexbox-between.flexbox-align-top
+      h3.flat-title = offer.title
+      .price-tag = "#{humanized_money(offer.price)}€"
+    p = offer.description
+  .flat-card-footer.flexbox.flexbox-center
+    .flexitem-main
+      | Il y a
+      =< distance_of_time_in_words_to_now(offer.lbc_date)
+    .flexitem
+      .flat-button-group
+        = link_to t('.show'), offer.url, target: '_blank', rel: 'noopener noreferrer', class: 'flat-button'

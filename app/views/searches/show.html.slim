@@ -1,5 +1,13 @@
 .container
   .flexbox.flexbox-between.flexbox-align-top
     h1.flat-title
-      = @search.query
+      i class=("fas fa-#{@search.category.icon_name}") title=(@search.category.title)
+      =<> @search.query
+      | (
+      =<> t('offers', count: @search.offers.count)
+      | )
     = link_to t('.all_searches'), searches_path, class: 'flat-button'
+  .columns
+    - @search.offers.each do |offer|
+      .column.is-4-desktop.is-6-tablet
+        = render 'offers/card', offer: offer
