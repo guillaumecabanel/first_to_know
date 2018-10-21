@@ -1,0 +1,14 @@
+fr:
+  simple_form:
+    "yes": Oui
+    "no": Non
+
+    labels:
+      defaults:
+        password: Mot de passe
+    placeholders:
+      defaults:
+        email: jean.martin@example.com
+        password: C'est votre secret
+        query: Bureau en bois brut
+        zip_code: 44000

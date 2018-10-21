@@ -13,7 +13,14 @@
   font-size: 1rem;
   line-height: 1.5;
 
+  &.flat-button-small {
+    font-size: 0.7rem;
+    line-height: 1;
+    color: inherit;
+  }
+
   &:hover{
+    color: $violet;
     border: 1px solid $violet;
     cursor: pointer;
     padding-top: 7px;
@@ -34,12 +41,12 @@
   }
 }
 
-.flat-button-group {
+.flat-form-button-group {
   display: flex;
   align-items: center;
   justify-content: space-between;
   .flat-button {
-    margin: 0 8px;
+    margin: 0 1rem;
     &:first-child {
       margin: 0 8px 0 0;
     }

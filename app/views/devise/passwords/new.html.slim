@@ -4,15 +4,14 @@
       .columns
         .column.is-4-desktop.is-offset-4-desktop.is-6-tablet.is-offset-3-tablet
           = simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post, class: 'flat-form' }) do |f|
-            .flat-card
-              h2.flat-title.has-text-centered = t('forgot_password')
-              = f.input :email,
-                              required: true, autofocus: true,
-                              input_html: { autocomplete: "email" }
+            h2.flat-title.has-text-centered = t('forgot_password')
+            = f.input :email,
+                            required: true, autofocus: true,
+                            input_html: { autocomplete: "email" }
 
-              .flat-card-footer.flexbox.flexbox-center
-                .flexitem-main
-                .flexitem
-                  .flat-button-group
-                    = link_to t('cancel'), new_user_session_path, class: 'flat-button'
-                    = f.submit t('send_reset_instructions'), class: 'flat-button flat-button-primary'
+            .flat-form-footer.flexbox.flexbox-center
+              .flexitem-main
+              .flexitem
+                .flat-form-button-group
+                  = link_to t('cancel'), new_user_session_path, class: 'flat-button'
+                  = f.submit t('send_reset_instructions'), class: 'flat-button flat-button-primary'

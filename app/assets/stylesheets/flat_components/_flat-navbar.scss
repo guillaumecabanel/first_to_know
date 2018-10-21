@@ -2,6 +2,7 @@
   background-color: $violet;
   color: $white;
   padding: 16px;
+  margin-bottom: 4rem;
 
   .flat-button {
     background-color: $violet;
@@ -17,6 +18,12 @@
     letter-spacing: .1rem;
     font-size: 1rem;
     line-height: 1.5;
+
+    &.flat-button-small {
+      font-size: 0.7rem;
+      line-height: 1;
+      color: inherit;
+    }
 
     &:hover{
       border: 1px solid $white;

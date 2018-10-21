@@ -2,20 +2,8 @@ body {
   color: $violet;
 }
 
-a {
+p {
   color: $violet;
-  text-transform: uppercase;
-  letter-spacing: .1rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-bottom: 1px solid $violet;
-  padding: 4px;
-  padding-bottom: 0;
-
-  &:hover{
-    background-color: $violet default;
-    color: $white default;
-  }
 }
 
 .flat-title{
@@ -24,9 +12,17 @@ a {
   text-transform: uppercase;
   letter-spacing: .1rem;
   line-height: 1.5;
-  margin-bottom: 16px;
+  margin-bottom: 2rem;
+}
+
+h1.flat-title {
+  font-size: 1.9rem;
 }
 
 h2.flat-title {
   font-size: 1.7rem;
+}
+
+h3.flat-title {
+  font-size: 1.2rem;
 }

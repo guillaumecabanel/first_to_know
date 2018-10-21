@@ -1,4 +1,22 @@
 .flat-form {
+
+  border-left: 1px solid $violet;
+  border-right: 1px solid $violet;
+  padding: 0 16px;
+
+  animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+  .flat-form-footer {
+    margin: 0 -17px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 32px 16px 0 16px ;
+  }
+
+  .field {
+    margin-bottom: 32px;
+  }
+
   .input {
     border: none;
     border-bottom: 1px groove $violet;
@@ -28,5 +46,14 @@
 
   .is-success {
     color: $violet;
+  }
+
+  .select{
+    height: 100%;
+    display: block;
+
+    &::after {
+      border: none !important;
+    }
   }
 }

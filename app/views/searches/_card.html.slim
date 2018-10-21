@@ -1,0 +1,11 @@
+= link_to search_path(search) do
+  .flat-card.flat-card-link
+    .flat-card-body
+      .flexbox.flexbox-between.flexbox-align-top
+        h3.flat-title = search.query
+        p
+          i class=("fas fa-#{search.category.icon_name}")
+          =< search.category.title
+    .flat-card-footer.flexbox.flexbox-center
+      .flexitem-main
+      .flexitem

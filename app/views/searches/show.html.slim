@@ -1,0 +1,5 @@
+.container
+  .flexbox.flexbox-between.flexbox-align-top
+    h1.flat-title
+      = @search.query
+    = link_to t('.all_searches'), searches_path, class: 'flat-button'

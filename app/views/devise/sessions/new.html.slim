@@ -4,16 +4,15 @@
       .columns
         .column.is-4-desktop.is-offset-4-desktop.is-6-tablet.is-offset-3-tablet
           = simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'flat-form'} ) do |f|
-            .flat-card
-              h2.flat-title.has-text-centered = t('sign_in')
-              = f.input :email, autofocus: true
-              = f.input :password
-              - if devise_mapping.rememberable?
-                input value="true" name="user[remember_me]" type="hidden"
+            h2.flat-title.has-text-centered = t('sign_in')
+            = f.input :email, autofocus: true
+            = f.input :password
+            - if devise_mapping.rememberable?
+              input value="true" name="user[remember_me]" type="hidden"
 
-              .flat-card-footer.flexbox.flexbox-center
-                .flexitem-main
-                .flexitem
-                  .flat-button-group
-                    = link_to t('cancel'), root_path, class: 'flat-button'
-                    = f.submit t('sign_in'), class: 'flat-button flat-button-primary'
+            .flat-form-footer.flexbox.flexbox-center
+              .flexitem-main
+              .flexitem
+                .flat-form-button-group
+                  = link_to t('cancel'), root_path, class: 'flat-button'
+                  = f.submit t('sign_in'), class: 'flat-button flat-button-primary'

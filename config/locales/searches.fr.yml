@@ -1,0 +1,14 @@
+fr:
+  searches:
+    zero: pas de recherche
+    one: 1 recherche
+    other: '%{count} recherches'
+    index:
+      new_search: Nouvelle recherche
+    new:
+      new_search: Nouvelle recherche
+      search: Chercher
+    show:
+      all_searches: Voir toutes les recherches
+    card:
+      show: Voir
