@@ -1,0 +1,38 @@
+.flat-button {
+  background-color: $white;
+  border-top: 1px solid $violet;
+  border-bottom: 1px solid $violet;
+  border-left: none;
+  border-right: none;
+  padding: 8px;
+
+  font-family: 'Lato', sans-serif;
+  color: $violet;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  transition: all 0.4s ease-out;
+
+  &:hover{
+    color: $white;
+    background-color: $violet;
+    cursor: pointer;
+  }
+}
+
+.flat-button-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .flat-button {
+    margin: 0 8px;
+    &:first-child {
+      margin: 0 8px 0 0;
+    }
+    &:last-child {
+      margin: 0 0 0 8px;
+    }
+  }
+}

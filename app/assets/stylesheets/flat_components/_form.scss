@@ -1,0 +1,29 @@
+.flat-form {
+  .input {
+    border: none;
+    border-bottom: 1px groove $violet;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    background-color: transparent;
+    color: $violet;
+    transition: all 0.4s ease-out;
+
+    &::placeholder {
+      color: rgba($violet, 0.7);
+    }
+
+    &:focus{
+      border-bottom: 1px solid $violet;
+    }
+  }
+
+  .label {
+    font-family: 'Lato', sans-serif;
+    color: $violet;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+}

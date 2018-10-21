@@ -1,0 +1,22 @@
+.flat-card {
+  border-left: 1px solid $violet;
+  border-right: 1px solid $violet;
+  padding: 0 16px;
+
+	animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+  .flat-card-footer {
+    margin-top: 32px;
+  }
+}
+
+@keyframes scale-in-hor-center {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
