@@ -228,5 +228,5 @@ fr:
     attributes:
       search:
         category: Catégorie
-        query: Vous cherchez
+        query: Je recherche
         zip_code: Code postal
