@@ -6,14 +6,14 @@
           = simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'flat-form'} ) do |f|
             .flat-card
               h2.flat-title.has-text-centered = t('sign_in')
-              = f.input :email, autofocus: true, placeholder: 'john.doe@example.com'
-              = f.input :password, placeholder: 'This is your secret'
+              = f.input :email, autofocus: true
+              = f.input :password
               - if devise_mapping.rememberable?
                 input value="true" name="user[remember_me]" type="hidden"
 
               .flat-card-footer.flexbox.flexbox-center
-                  .flexitem-main
-                  .flexitem
-                    .flat-button-group
-                      = link_to t('cancel'), root_path, class:"flat-button"
-                      = f.submit t('sign_in'), class: 'flat-button'
+                .flexitem-main
+                .flexitem
+                  .flat-button-group
+                    = link_to t('cancel'), root_path, class: 'flat-button'
+                    = f.submit t('sign_in'), class: 'flat-button flat-button-primary'

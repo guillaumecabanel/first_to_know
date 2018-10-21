@@ -4,15 +4,17 @@ body {
 
 a {
   color: $violet;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-size: 1rem;
+  line-height: 1.5;
   border-bottom: 1px solid $violet;
   padding: 4px;
   padding-bottom: 0;
-  transition: all 0.4s ease-out;
 
   &:hover{
-    background-color: $violet;
-    color: $white;
-    // border-bottom: 1px solid $white;
+    background-color: $violet default;
+    color: $white default;
   }
 }
 
@@ -22,6 +24,7 @@ a {
   text-transform: uppercase;
   letter-spacing: .1rem;
   line-height: 1.5;
+  margin-bottom: 16px;
 }
 
 h2.flat-title {

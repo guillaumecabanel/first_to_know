@@ -1,0 +1,41 @@
+.flat-navbar {
+  background-color: $violet;
+  color: $white;
+  padding: 16px;
+
+  .flat-button {
+    background-color: $violet;
+    border-bottom: 1px solid $white;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    padding: 8px;
+
+    font-family: 'Lato', sans-serif;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+
+    &:hover{
+      border: 1px solid $white;
+      cursor: pointer;
+      padding-top: 7px;
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+
+    &.flat-button-primary {
+      color: $violet;
+      background-color: $white;
+      &:hover {
+        background-color: $violet;
+        color: $white;
+        border-top: 1px solid $white;
+        border-bottom: 1px solid $white;
+        padding: 7px;
+      }
+    }
+  }
+}

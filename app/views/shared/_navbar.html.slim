@@ -1,8 +1,13 @@
-- if current_user
-  = link_to 'Sign out', destroy_user_session_path, method: :delete
-- else
-  - if controller_name != 'sessions'
-    = link_to 'Sign in', new_user_session_path
-  - else
-    = link_to "Sign up", new_registration_path(resource_name)
-    = link_to "Forgot your password?", new_password_path(resource_name)
+.flat-navbar
+  .flexbox.flexbox-between
+    .flexitem-main
+    .flexitem
+      .flat-button-group
+        - if current_user
+          = link_to t('sign_out'), destroy_user_session_path, method: :delete, class: 'flat-button'
+        - else
+          - if controller_name != 'sessions'
+            = link_to t('sign_in'), new_user_session_path, class: 'flat-button'
+          - else
+            = link_to t('forgot_password'), new_password_path(resource_name), class: 'flat-button '
+            = link_to t('sign_up'), new_registration_path(resource_name), class: 'flat-button flat-button-primary'

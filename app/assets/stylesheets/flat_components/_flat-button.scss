@@ -1,9 +1,9 @@
 .flat-button {
   background-color: $white;
-  border-top: 1px solid $violet;
   border-bottom: 1px solid $violet;
   border-left: none;
   border-right: none;
+  border-top: none;
   padding: 8px;
 
   font-family: 'Lato', sans-serif;
@@ -13,12 +13,24 @@
   font-size: 1rem;
   line-height: 1.5;
 
-  transition: all 0.4s ease-out;
-
   &:hover{
+    border: 1px solid $violet;
+    cursor: pointer;
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  &.flat-button-primary {
     color: $white;
     background-color: $violet;
-    cursor: pointer;
+    &:hover {
+      background-color: $white;
+      color: $violet;
+      border-top: 1px solid $violet;
+      border-bottom: 1px solid $violet;
+      padding: 7px;
+    }
   }
 }
 

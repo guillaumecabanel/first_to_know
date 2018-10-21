@@ -1,0 +1,16 @@
+fr:
+  cancel: Annuler
+  sign_in: Se connecter
+  sign_out: Se déconnecter
+  sign_up: S'inscrire
+  forgot_password: Mot de passe oublié
+  send_reset_instructions: Envoyer les instructions
+
+  simple_form:
+    labels:
+      defaults:
+        password: Mot de passe
+    placeholders:
+      defaults:
+        email: jean.martin@example.com
+        password: C'est votre secret
